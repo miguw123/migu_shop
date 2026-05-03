@@ -1,0 +1,26 @@
+
+
+在：:
+  推::
+    分支: [ "主分支" ]: [ "主分支" ]
+  拉取请求::
+    分支: [ "主分支" ]: [ "主分支" ]
+
+工作：：
+  构建:：
+
+    运行于：u：ubuntu-latest
+
+    步骤：：
+    - 使用：actions/checkout@v4使用： actions/checkout@v4
+    - 名称: 设置: 设置 JDK 11
+      用途：操作/设置Java@v4操作/设置Java@v4
+      与：：
+        java 版本：'11'：'11'
+        发行版：'temurin'：'temurin'
+        缓存：gradle：gradle
+
+    - name: 授予gradlew执行权限name: 授予gradlew执行权限
+      运行：chmod +x gradlew： chmod +x gradlew
+    - 名称: 使用 Gradle 构建name: 用 Gradle 构建
+      运行:./gradlew build：./gradlew build
