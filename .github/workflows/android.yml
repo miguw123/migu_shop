@@ -2,14 +2,14 @@
 
 在：:
   推:
-  分支: [ "主分支" ]: [ "主分支" ]
+    branches: [ "main" ]”
   拉取请求::
-  分支: [ "主分支" ]: [ "主分支" ]
+    分支: [ "主分支" ]: [ "主分支" ]
 
+      运行:./gradlew build：./gradlew build运行:./gradlew build：./gradlew build
       运行:./gradlew build：./gradlew build
-工作：：
 
-    运行于：u：ubuntu-latest
+工作：：
 
     步骤：：
     - 使用：actions/checkout@v4使用：
